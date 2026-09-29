@@ -1,0 +1,565 @@
+{
+  "origem": "medicao",
+  "resumo": {
+    "BERT": {
+      "acuracia": {
+        "media": 0.8693333333333334,
+        "desvio": 0.011469767022723513
+      },
+      "f1_macro": {
+        "media": 0.8692510510514668,
+        "desvio": 0.011509250248693864
+      },
+      "tempo_treino": {
+        "media": 40.93231829133333,
+        "desvio": 0.9210126917417828
+      },
+      "disco_mb": {
+        "media": 678.539026260376,
+        "desvio": 0.0
+      },
+      "parametros": {
+        "media": 177854978.0,
+        "desvio": 0.0
+      },
+      "latencia_ms": {
+        "media": 170.692688000031,
+        "desvio": 0.0
+      }
+    },
+    "DistilBERT": {
+      "acuracia": {
+        "media": 0.8906666666666667,
+        "desvio": 0.009977753031397186
+      },
+      "f1_macro": {
+        "media": 0.8906391757706373,
+        "desvio": 0.010000317707814236
+      },
+      "tempo_treino": {
+        "media": 23.484224869333314,
+        "desvio": 0.029193447243074034
+      },
+      "disco_mb": {
+        "media": 516.267388343811,
+        "desvio": 0.0
+      },
+      "parametros": {
+        "media": 135326210.0,
+        "desvio": 0.0
+      },
+      "latencia_ms": {
+        "media": 86.08691299997417,
+        "desvio": 0.0
+      }
+    }
+  },
+  "previsoes": [
+    {
+      "frase": "O reembolso caiu em dois dias úteis.",
+      "esperado": 1,
+      "tipo": "teste",
+      "bert": {
+        "pred": 0,
+        "conf": 0.9972,
+        "ms": 174.4
+      },
+      "distil": {
+        "pred": 1,
+        "conf": 0.8055,
+        "ms": 84.76
+      }
+    },
+    {
+      "frase": "Nunca mais tive problema depois do conserto.",
+      "esperado": 1,
+      "tipo": "teste",
+      "bert": {
+        "pred": 0,
+        "conf": 0.9916,
+        "ms": 171.75
+      },
+      "distil": {
+        "pred": 1,
+        "conf": 0.6093,
+        "ms": 84.96
+      }
+    },
+    {
+      "frase": "Material resistente, dá pra ver que foi bem feito.",
+      "esperado": 1,
+      "tipo": "teste",
+      "bert": {
+        "pred": 1,
+        "conf": 0.9985,
+        "ms": 170.74
+      },
+      "distil": {
+        "pred": 1,
+        "conf": 0.9955,
+        "ms": 84.61
+      }
+    },
+    {
+      "frase": "Perfeito para viagem, ocupa pouco espaço na mala.",
+      "esperado": 1,
+      "tipo": "teste",
+      "bert": {
+        "pred": 1,
+        "conf": 0.8357,
+        "ms": 171.57
+      },
+      "distil": {
+        "pred": 1,
+        "conf": 0.9953,
+        "ms": 83.05
+      }
+    },
+    {
+      "frase": "Vale muito a pena, já indiquei para três amigos.",
+      "esperado": 1,
+      "tipo": "teste",
+      "bert": {
+        "pred": 1,
+        "conf": 0.9678,
+        "ms": 171.24
+      },
+      "distil": {
+        "pred": 1,
+        "conf": 0.9955,
+        "ms": 79.22
+      }
+    },
+    {
+      "frase": "Simples, mas muito bem executado.",
+      "esperado": 1,
+      "tipo": "teste",
+      "bert": {
+        "pred": 1,
+        "conf": 0.9979,
+        "ms": 171.91
+      },
+      "distil": {
+        "pred": 1,
+        "conf": 0.9961,
+        "ms": 86.81
+      }
+    },
+    {
+      "frase": "Consegui parcelar sem juros, ajudou bastante.",
+      "esperado": 1,
+      "tipo": "teste",
+      "bert": {
+        "pred": 1,
+        "conf": 0.9721,
+        "ms": 167.4
+      },
+      "distil": {
+        "pred": 1,
+        "conf": 0.9867,
+        "ms": 87.95
+      }
+    },
+    {
+      "frase": "Resolveu meu problema de espaço na cozinha.",
+      "esperado": 1,
+      "tipo": "teste",
+      "bert": {
+        "pred": 1,
+        "conf": 0.9809,
+        "ms": 169.03
+      },
+      "distil": {
+        "pred": 1,
+        "conf": 0.9802,
+        "ms": 97.74
+      }
+    },
+    {
+      "frase": "Tela nítida e boa mesmo sob o sol.",
+      "esperado": 1,
+      "tipo": "teste",
+      "bert": {
+        "pred": 0,
+        "conf": 0.9963,
+        "ms": 240.26
+      },
+      "distil": {
+        "pred": 1,
+        "conf": 0.9272,
+        "ms": 115.67
+      }
+    },
+    {
+      "frase": "Peça original e o preço melhor que o da concessionária.",
+      "esperado": 1,
+      "tipo": "teste",
+      "bert": {
+        "pred": 1,
+        "conf": 0.9673,
+        "ms": 252.37
+      },
+      "distil": {
+        "pred": 1,
+        "conf": 0.9655,
+        "ms": 114.13
+      }
+    },
+    {
+      "frase": "A cor é exatamente a da foto.",
+      "esperado": 1,
+      "tipo": "teste",
+      "bert": {
+        "pred": 1,
+        "conf": 0.9391,
+        "ms": 166.48
+      },
+      "distil": {
+        "pred": 1,
+        "conf": 0.9908,
+        "ms": 91.29
+      }
+    },
+    {
+      "frase": "Preço abaixo da média e qualidade acima.",
+      "esperado": 1,
+      "tipo": "teste",
+      "bert": {
+        "pred": 1,
+        "conf": 0.9384,
+        "ms": 168.49
+      },
+      "distil": {
+        "pred": 1,
+        "conf": 0.9537,
+        "ms": 84.97
+      }
+    },
+    {
+      "frase": "Textura pegajosa e desagradável.",
+      "esperado": 0,
+      "tipo": "teste",
+      "bert": {
+        "pred": 0,
+        "conf": 0.9966,
+        "ms": 168.9
+      },
+      "distil": {
+        "pred": 0,
+        "conf": 0.9808,
+        "ms": 84.42
+      }
+    },
+    {
+      "frase": "A bateria não dura nem meio período.",
+      "esperado": 0,
+      "tipo": "teste",
+      "bert": {
+        "pred": 0,
+        "conf": 0.9968,
+        "ms": 169.79
+      },
+      "distil": {
+        "pred": 0,
+        "conf": 0.9876,
+        "ms": 84.63
+      }
+    },
+    {
+      "frase": "O tamanho é bem menor do que aparece nas fotos.",
+      "esperado": 0,
+      "tipo": "teste",
+      "bert": {
+        "pred": 1,
+        "conf": 0.5963,
+        "ms": 170.81
+      },
+      "distil": {
+        "pred": 1,
+        "conf": 0.6652,
+        "ms": 83.63
+      }
+    },
+    {
+      "frase": "Preço acima da média e qualidade bem abaixo.",
+      "esperado": 0,
+      "tipo": "teste",
+      "bert": {
+        "pred": 1,
+        "conf": 0.9985,
+        "ms": 165.72
+      },
+      "distil": {
+        "pred": 1,
+        "conf": 0.9918,
+        "ms": 85.13
+      }
+    },
+    {
+      "frase": "Manutenção caríssima, as peças são raras.",
+      "esperado": 0,
+      "tipo": "teste",
+      "bert": {
+        "pred": 0,
+        "conf": 0.994,
+        "ms": 180.06
+      },
+      "distil": {
+        "pred": 1,
+        "conf": 0.983,
+        "ms": 85.65
+      }
+    },
+    {
+      "frase": "Mal sinalizado, rodei uma hora tentando achar.",
+      "esperado": 0,
+      "tipo": "teste",
+      "bert": {
+        "pred": 0,
+        "conf": 0.9977,
+        "ms": 182.38
+      },
+      "distil": {
+        "pred": 0,
+        "conf": 0.9927,
+        "ms": 90.74
+      }
+    },
+    {
+      "frase": "Tecido áspero e a costura já está soltando.",
+      "esperado": 0,
+      "tipo": "teste",
+      "bert": {
+        "pred": 0,
+        "conf": 0.9489,
+        "ms": 172.91
+      },
+      "distil": {
+        "pred": 1,
+        "conf": 0.9344,
+        "ms": 85.82
+      }
+    },
+    {
+      "frase": "Precisei de técnico só para conseguir ligar.",
+      "esperado": 0,
+      "tipo": "teste",
+      "bert": {
+        "pred": 1,
+        "conf": 0.7117,
+        "ms": 169.81
+      },
+      "distil": {
+        "pred": 1,
+        "conf": 0.9719,
+        "ms": 122.85
+      }
+    },
+    {
+      "frase": "Só aceitam à vista, sem nenhuma facilidade.",
+      "esperado": 0,
+      "tipo": "teste",
+      "bert": {
+        "pred": 1,
+        "conf": 0.5883,
+        "ms": 224.49
+      },
+      "distil": {
+        "pred": 0,
+        "conf": 0.8507,
+        "ms": 115.09
+      }
+    },
+    {
+      "frase": "Péssimo para presentear, a apresentação é sofrível.",
+      "esperado": 0,
+      "tipo": "teste",
+      "bert": {
+        "pred": 0,
+        "conf": 0.9968,
+        "ms": 218.13
+      },
+      "distil": {
+        "pred": 0,
+        "conf": 0.9866,
+        "ms": 117.54
+      }
+    },
+    {
+      "frase": "O pagamento falhou três vezes e debitaram duas.",
+      "esperado": 0,
+      "tipo": "teste",
+      "bert": {
+        "pred": 0,
+        "conf": 0.9975,
+        "ms": 186.81
+      },
+      "distil": {
+        "pred": 0,
+        "conf": 0.9743,
+        "ms": 93.38
+      }
+    },
+    {
+      "frase": "Serviço demorado e mal executado.",
+      "esperado": 0,
+      "tipo": "teste",
+      "bert": {
+        "pred": 0,
+        "conf": 0.9971,
+        "ms": 180.18
+      },
+      "distil": {
+        "pred": 0,
+        "conf": 0.9792,
+        "ms": 86.93
+      }
+    },
+    {
+      "frase": "Nossa, que produto genial. Quebrou em dois dias.",
+      "esperado": 0,
+      "tipo": "ironia",
+      "bert": {
+        "pred": 0,
+        "conf": 0.9975,
+        "ms": 181.29
+      },
+      "distil": {
+        "pred": 1,
+        "conf": 0.9924,
+        "ms": 83.54
+      }
+    },
+    {
+      "frase": "Não posso dizer que me arrependi da compra.",
+      "esperado": 1,
+      "tipo": "dupla negação",
+      "bert": {
+        "pred": 0,
+        "conf": 0.9967,
+        "ms": 178.5
+      },
+      "distil": {
+        "pred": 0,
+        "conf": 0.9528,
+        "ms": 83.06
+      }
+    },
+    {
+      "frase": "Não recomendo para quem gosta de coisa malfeita.",
+      "esperado": 1,
+      "tipo": "negação + escopo",
+      "bert": {
+        "pred": 0,
+        "conf": 0.9975,
+        "ms": 174.06
+      },
+      "distil": {
+        "pred": 0,
+        "conf": 0.9946,
+        "ms": 84.83
+      }
+    },
+    {
+      "frase": "Esperava muito pouco e ainda assim me decepcionei.",
+      "esperado": 0,
+      "tipo": "ironia comparativa",
+      "bert": {
+        "pred": 0,
+        "conf": 0.9973,
+        "ms": 179.28
+      },
+      "distil": {
+        "pred": 0,
+        "conf": 0.8242,
+        "ms": 85.47
+      }
+    },
+    {
+      "frase": "O produto é bom, pena que o atendimento estragou tudo.",
+      "esperado": 0,
+      "tipo": "ressalva que inverte",
+      "bert": {
+        "pred": 0,
+        "conf": 0.9407,
+        "ms": 181.53
+      },
+      "distil": {
+        "pred": 1,
+        "conf": 0.9975,
+        "ms": 86.23
+      }
+    },
+    {
+      "frase": "Caro, pesado, feio — e eu amei.",
+      "esperado": 1,
+      "tipo": "contraste final",
+      "bert": {
+        "pred": 0,
+        "conf": 0.966,
+        "ms": 183.02
+      },
+      "distil": {
+        "pred": 1,
+        "conf": 0.9439,
+        "ms": 86.29
+      }
+    },
+    {
+      "frase": "Chegou no prazo.",
+      "esperado": 1,
+      "tipo": "neutro demais",
+      "bert": {
+        "pred": 1,
+        "conf": 0.9974,
+        "ms": 176.63
+      },
+      "distil": {
+        "pred": 1,
+        "conf": 0.9938,
+        "ms": 91.35
+      }
+    },
+    {
+      "frase": "Depois de três trocas, finalmente veio um que funciona.",
+      "esperado": 0,
+      "tipo": "positivo aparente",
+      "bert": {
+        "pred": 0,
+        "conf": 0.8929,
+        "ms": 172.29
+      },
+      "distil": {
+        "pred": 0,
+        "conf": 0.906,
+        "ms": 119.41
+      }
+    }
+  ],
+  "variacoes": {
+    "BERT": {
+      "parametros": 109.5,
+      "camadas": 12,
+      "disco_mb": 417.7,
+      "latencia_ms": 179.93
+    },
+    "RoBERTa": {
+      "parametros": 124.6,
+      "camadas": 12,
+      "disco_mb": 475.6,
+      "latencia_ms": 182.77
+    },
+    "ALBERT": {
+      "parametros": 11.7,
+      "camadas": 12,
+      "disco_mb": 44.6,
+      "latencia_ms": 175.74
+    },
+    "DistilBERT": {
+      "parametros": 67.0,
+      "camadas": 6,
+      "disco_mb": 255.5,
+      "latencia_ms": 89.91
+    }
+  }
+}
